@@ -1,0 +1,14 @@
+<mat-card>
+        <div id="button">
+        <button mat-raised-button [routerLink]="['/admin-login']" color="warn">Login</button>
+        </div>
+</mat-card>
+<br>
+<br>
+<br>
+<div id='tabs'>
+<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+        <mat-tab label="Players Ranking"><player-ranking></player-ranking></mat-tab>
+        <mat-tab label="Admin"><admin-login></admin-login></mat-tab>
+</mat-tab-group>
+</div>

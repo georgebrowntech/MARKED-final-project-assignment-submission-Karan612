@@ -1,0 +1,85 @@
+<!-- Title group  -->
+<div class="title-group">
+        <h1 class="mat-h1">Add Game</h1>
+        <mat-divider fxFlex="1 0"></mat-divider>
+      </div>
+      
+      <!-- Form -->
+      <div class="inner-wrapper">
+        <form [formGroup]="gameForm" (ngSubmit)="submitGameForm()" #resetgameForm="ngForm" novalidate>
+          <!-- Form Fields -->
+          <mat-card>
+            <div class="full-wrapper button-wrapper">
+              <!-- Title -->
+              <mat-label>Title</mat-label>
+              <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Game title" formControlName="title">
+                  <mat-error *ngIf="handleError('title', 'required')">
+                      You must provide a<strong> game title</strong>
+                  </mat-error>
+              </mat-form-field><br>
+              <!-- Platform -->
+              <mat-label>Platform</mat-label>
+              <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Platform" formControlName="platform">
+                  <mat-error *ngIf="handleError('platform', 'required')">
+                      You must provide a<strong> platform</strong>
+                  </mat-error>
+              </mat-form-field><br>
+              <!-- Genre -->
+              <mat-label>Genre</mat-label>
+              <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Genre" formControlName="genre">
+                  <mat-error *ngIf="handleError('genre', 'required')">
+                      You must provide a<strong> genre</strong>
+                  </mat-error>
+              </mat-form-field><br>
+              <!-- Rating -->
+              <mat-label>Rating</mat-label>
+              <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Rating" formControlName="rating">
+                    <mat-error *ngIf="handleError('rating', 'required')">
+                        You must provide a<strong> rating</strong>
+                    </mat-error>
+                </mat-form-field><br>
+                <!-- Publisher -->
+                <mat-label>Publisher</mat-label>
+              <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Publisher" formControlName="publisher">
+                    <mat-error *ngIf="handleError('publisher', 'required')">
+                        You must provide a<strong> publisher</strong>
+                    </mat-error>
+                </mat-form-field><br>
+                <!-- Release -->
+                <mat-label>Release</mat-label>
+              <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Release" formControlName="release">
+                    <mat-error *ngIf="handleError('release', 'required')">
+                        You must provide a<strong> release</strong>
+                    </mat-error>
+                </mat-form-field><br>
+              <!-- Status -->
+              <mat-label>Status</mat-label>
+              <mat-form-field>
+                  <mat-label>Select a Status</mat-label>
+                  <mat-select  formControlName="status">
+                      <mat-option [value]="statusArray" *ngFor="let statusArray of StatusArray">{{statusArray}}
+                      </mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="handleError('status', 'required')">
+                      Status is required
+                  </mat-error>
+              </mat-form-field>
+            </div>
+          </mat-card>
+          <!-- Submit & Reset -->
+          <mat-card>
+            <div class="full-wrapper button-wrapper">
+              <div class="button-wrapper">
+                  <button mat-flat-button color="warn">Submit</button>
+                  <button mat-raised-button [routerLink]="['/admin-home/1']" color="warn">Cancel</button>
+              </div>
+            </div>
+          </mat-card>
+        </form>
+      </div>

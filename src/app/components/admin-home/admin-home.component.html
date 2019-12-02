@@ -1,0 +1,14 @@
+<mat-card>
+        <div id="button">
+        <button mat-raised-button [routerLink]="['/guest-home']" color="warn">Logout</button>
+        </div>
+</mat-card>
+<br>
+<br>
+<br>
+<div id='tabs'>
+<mat-tab-group mat-stretch-tabs [selectedIndex]="tabid" class="example-stretched-tabs mat-elevation-z4">
+        <mat-tab label="Players"><player-list></player-list></mat-tab>
+        <mat-tab label="Games" ><list-games></list-games></mat-tab>
+</mat-tab-group>
+</div>

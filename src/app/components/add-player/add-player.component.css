@@ -1,0 +1,9 @@
+.inner-wrapper {
+    margin-left: 40%;
+}
+mat-form-field {
+    margin-left: 60px;
+}
+.button-wrapper button {
+    margin-left: 60px;
+}

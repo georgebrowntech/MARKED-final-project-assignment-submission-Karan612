@@ -1,0 +1,9 @@
+#button {
+    float: right;
+    margin: 10px;
+}
+#tabs {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
