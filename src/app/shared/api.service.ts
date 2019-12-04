@@ -12,7 +12,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 
 export class ApiService {
 
-  endpoint: string = 'https://gamer-lobby-backend/api';
+  endpoint: string = 'https://gamer-lobby-backend.herokuapp.com/api';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) { }
