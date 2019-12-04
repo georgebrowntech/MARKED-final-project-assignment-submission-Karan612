@@ -1,5 +1,7 @@
-# Karan Patel - 101145861
-# Kashyap Gauswami - 101111621
+# Group Members:
+
+## Karan Patel - 101145861
+## Kashyap Gauswami - 101111621
 
 # GamerLobby
 
