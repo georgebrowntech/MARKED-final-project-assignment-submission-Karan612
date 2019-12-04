@@ -1,3 +1,6 @@
+# Karan Patel - 101145861
+# Kashyap Gauswami - 101111621
+
 # GamerLobby
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
